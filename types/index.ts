@@ -107,7 +107,7 @@ export type CreateCategoryParams = {
 export type CheckoutOrderParams = {
   eventTitle: string
   eventId: string
-  price: string
+  price: string | undefined
   isFree: boolean
   buyerId: string
 }
