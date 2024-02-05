@@ -28,7 +28,7 @@ export type CreateEventParams = {
     categoryId: string
     price: string
     isFree: boolean
-    url: string
+    url: string | null
   }
   path: string
 }
@@ -46,7 +46,7 @@ export type UpdateEventParams = {
     categoryId: string
     price: string
     isFree: boolean
-    url: string
+    url: string | null
   }
   path: string
 }
@@ -86,7 +86,7 @@ export type Event = {
   location: string
   startDateTime: Date
   endDateTime: Date
-  url: string
+  url: string | null
   organizer: {
     _id: string
     firstName: string
